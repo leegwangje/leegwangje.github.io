@@ -1,90 +1,181 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset='utf-8'>
 <style>
+#page{width: 995px;
+    
+    margin:0 auto; border: solid 1px none;}
+
 table, th, tr, td {
-	border: solid 1px black;
-	border-collapse: collapse;
-	padding: 8px;
+		border: solid 1px gray;
+		border-collapse: collapse;
+		padding: 8px;
+		margin: 0 auto;
+	}
+	table{text-align: center;}
+	
+	table th { background:skyblue;}
+.clear{clear:both;}
+
+header{width: 995px;
+height: 100px;
+background-color: lightseagreen;
+margin-top: 10px;}
+
+nav{width: 995px;
+  height: 80px;
+  margin-top: 10px;}
+
+section{
+	width: 700px;
+	height: 400px;
+	float: left;
+	margin-top: 10px;
+	
 }
+
+aside{
+	width: 200px;
+	height: 300px;
+	float: left;
+	margin-top: 10px;
+	
+	
+}
+
+footer{
+	width:695px;
+    margin-top:50px;
+    
+	height: 100px;
+	border: solid 1px skyblue;
+    padding-bottom: 50px;
+	
+}
+
+#logo{margin: 0 auto;
+      float: right;}
+
+	  li{list-style-type: none;}
+
+      span{font-size: 50px;
+        padding-right: 300px;
+    }
+
+
+     ul{margin-bottom: 80px;}
 </style>
 </head>
 <body>
-     <form action="inital.html">
-	<h1>2022 1학기 시간표</h1>
 
+	<div id="page">
+	<header>
+		<div id="logo">
+		<span>2022 1학기 시간표</span>
+		</div>
+
+			
+	</header>
+   
+ <nav>
+	<h3>
+		<a href="rubato.html">[루바토 펜션안내]</a>
+		ㅣ
+		<a href="inital.html">[회원가입]</a>
+		ㅣ
+		<a href="festival.html">[호서 행사 안내]</a>
+		ㅣ
+		<a href="night.html">[주말 야간 개장 안내화면]</a>
+        ㅣ
+		<a href="sale.html">[세일 안내장]</a>
+		<br>
+		<a href="timetable.html">[월간 일정표]</a>
+		ㅣ
+		<a href="shopping.html">[쇼핑몰 판매목록]</a>
+	</h3>
+</nav>
+
+<section>
 	<table>
-
-	<tr>
-    <th>요일/교시</th>
-	<th>월요일</th>
-	<th>화요일</th>
-	<th>수요일</th>
-	<th>목요일</th>
-	<th>금요일</th>
-   	<th>토요일</th>
 	
-
-  </tr>
-
-		 <tr>
-		 <td>1교시</td><td></td><td> </td><td></td><td></td>
-		 <td></td><td>마케팅의 이해</td>
-		</tr>
-
-		   <tr>
-			   <td>2교시</td><td></td><td></td><td></td><td>채플</td>
-			   <td></td><td>웹프로그래밍</td>
+		<tr>
+		<th>요일/교시</th>
+		<th>월요일</th>
+		<th>화요일</th>
+		<th>수요일</th>
+		<th>목요일</th>
+		<th>금요일</th>
+		<th>토요일</th>
+		
+	
+	  </tr>
+	
+			 <tr>
+			 <td>1교시</td><td></td><td> </td><td></td><td></td>
+			 <td></td><td >마케팅의 이해</td>
 			</tr>
+	
+			   <tr>
+				   <td>2교시</td><td></td><td></td><td></td><td>채플</td>
+				   <td></td><td>웹프로그래밍</td>
+				</tr>
+	
+			   <tr>
+				   <td>3교시</td><td></td><td></td><td>대학영어회화2</td>
+				   <td rowspan="2">마케팅의 이해</td><td></td><td rowspan="3">문학과 상상력</td>
+				</tr>
+	
+			   <tr>
+				   <td>4교시</td><td></td><td>경영통계</td><td></td><td></td>
+					  
+				</tr>
+	
+			   <tr>
+				   <td>5교시</td></td><td></td><td rowspan="2">웹프로그래밍</td>
+				   <td rowspan="2">국가안보론</td><td rowspan="2">노인복지와 밴처</td>
+				</tr>
+	
+			   <tr>
+				   <td>6교시</td><td></td><td></td><td>대학영어회화2</td>
+				</tr>
+	
+			   <tr>
+				   <td>7교시</td> <td></td><td rowspan="2">경영통계</td><td></td><td></td>
+				   <td></td>
+				</tr>
+	
+			   <tr>
+				   <td>8교시</td><td></td><td></td><td></td><td></td>
+				</tr>
+	
+			   <tr>
+				   <td>9교시</td><td></td><td></td><td></td><td></td><td></td>
+				</tr>
+			
+		</table>
+</section>
+<aside>
+  <img src="may.PNG" width="200" height="300">
+  <img src="june.PNG" width="200" height="300">
+</aside>
 
-		   <tr>
-			   <td>3교시</td><td></td><td></td><td>대학영어회화2</td>
-			   <td rowspan="2">마케팅의 이해</td><td></td><td rowspan="3">문학과 상상력</td>
-			</tr>
+<div class="clear"></div>
+<footer>
+    <img src="img.PNG" width="50" height="50">
+	<ul>
+		<ul>
+			<li>충청남도 천안시 동남구 호서대길 12 호서대학교</li>
+			<li>TEL:041-560-8114</li>
+			<li>디지털 기술경영학과 이광제</li> 
+	</ul>
+    
+</footer>
+</div> 
 
-		   <tr>
-			   <td>4교시</td><td></td><td>경영통계</td><td></td><td></td>
-				  
-			</tr>
 
-		   <tr>
-			   <td>5교시</td></td><td></td><td rowspan="2">웹프로그래밍</td>
-			   <td rowspan="2">국가안보론</td><td rowspan="2">노인복지와 밴처</td>
-			</tr>
 
-		   <tr>
-			   <td>6교시</td><td></td><td></td><td>대학영어회화2</td>
-			</tr>
 
-		   <tr>
-			   <td>7교시</td> <td></td><td rowspan="2">경영통계</td><td></td><td></td>
-			   <td></td>
-			</tr>
-
-		   <tr>
-			   <td>8교시</td><td></td><td></td><td></td><td></td>
-			</tr>
-
-		   <tr>
-			   <td>9교시</td><td></td><td></td><td></td><td></td><td></td>
-			</tr>
-
-	</table>
-	<hr>
-	 <a href="rubato.html">[루바토 펜션안내]</a>
-	 <br>
-	 <a href="inital.html">[회원가입]</a>
-	 <br>
-	 <a href="festival.html">[호서 행사 안내]</a>
-	 <br>
-	 <a href="night.html">[주말 야간 개장 안내화면]</a>
-	 <br>
-	 <a href="sale.html">[세일 안내장]</a>
-	 <br>
-	 <a href="timetable.html">[월간 일정표]</a>
-	 <br>
-	 <a href="shopping.html">[쇼핑몰 판매목록]</a>
-	 </form>
 </body>
 </html>
