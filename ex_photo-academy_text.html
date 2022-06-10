@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<style>
+/*  기본틀 만들기 */
+
+* {padding: 0px; margin:0px;}
+header {/*background-color: red;*/
+	width: 1140px;
+	height: 100px;
+        
+        margin: 0 auto;}
+#main_img {background-color: blue; height: 250px; width: 100%; background-repeat: no-repeat; background-position: top center; margin-top: 20px}
+#contents {background-color: green; width: 1140px; margin: 0 auto;}
+#sub_menu {background-color: none ;width: 234px; float: left; }
+#main_contents{background-color: none;width: 880px; float: right; margin-top: 30px}
+footer {background-color: #2c2a29; width: 100%; height: 150px; margin-top: 30px}
+.clear {clear: both;}
+
+
+
+/*  header stylesheet */
+#logo {float: left;
+       margin: 20px 0px 0px 20px;}
+
+#menus {float: right;}
+#top_menu {margin-top: 20px;
+           text-align: right;}
+		   #main_menu {font-size: 20px;
+            margin-top: 20px;
+            font-family: '맑은고딕';}
+#main_menu li{display: inline;
+              
+              margin-left: 80px;}
+
+
+/*  main_img stylesheet */
+#main_img {background-image: url(img/main_img.png);
+           background-repeat: no-repeat;
+           background-position: top center;}
+/*  contents stylesheet */
+#sub_menu {margin-top: 25px;
+           width: 230px;
+           float: left;}
+#sub_menu h3 {font-size: 18px;
+              color: #5df0c0;
+              background-color: #516e7f;
+              padding: 10px;}
+
+#sub_menu li {list-style-type: none;
+              border-bottom: dotted 1px #cccccc;
+              padding: 10px;}
+
+#main_contents {margin-top: 25px;
+                width: 880px;
+                float: right;}
+
+#main_contents h3 {font-size: 30px;
+                   border-bottom: solid 1px #cccccc;
+                   padding-bottom: 8px;}
+
+#main_contents p {margin-top: 30px;
+                  line-height: 180%;}
+
+#main_contents #figure {text-align: center;
+                        margin-top: 30px;}
+      
+#main_contents li {list-style-type: none;
+                   padding: 5px;}
+/*  fooster stylesheet */
+
+#footer_box {margin: 0 auto;
+             width: 1140px;}
+
+
+#footer_logo {float: left;
+              margin: 50px 0 0 30px;}
+
+#address {float: right;
+          margin: 50px 30px 0 0;
+          color: white;}
+
+		  #address li {list-style-type: none;}
+</style>
+</head>
+
+<body>
+
+<header>
+      <div id="logo">
+            <img src="img/logo.png">
+      </div>
+
+      <nav id="menus">
+            <div id="top_menu">
+                  로그인 ㅣ 회원가입 ㅣ 공지사항
+            </div>
+            <ul id="main_menu">
+                  <li>사진이론</li>
+                  <li>사진구도</li>
+                  <li>사진작가</li>
+                  <li>갤러리</li>
+                  <li>커뮤니티</li>
+            </ul>
+      </nav>
+</header>
+
+<section id='main_img'>
+
+</section>
+
+<section id='contents'>
+     <nav id='sub_menu'>
+      <h3>사진이론</h3>
+      <ul>
+     <li>카메라 동작 원리</li>
+       <li>무조건 찍어보자!</li>
+      <li>피사체의 배경</li>
+      <li>조리개와 심도</li>
+        <li>카메라 촬영 모드</li>
+      </ul>
+     </nav>
+
+      <div id='main_contents'>
+            <h3>카메라 동작 원리</h3>
+
+		<p>DSLR 카메라에서 DSLR은 “Digital Single Lens Reflex”의 약어로써 우리말로는 디지털 일안 반사식 카메라을 의미합니다.
+			 DSLR은 디지털 카메라로써 카메라 내부에 들어온 빛이 상단의 펜타프리즘을 통하여 뷰파인더에 맺히게 되어 셔터를 누르기 전에 뷰 파인더를 통하여 피사체를 확인할 수 있게 됩니다.</p>
+		<div id="figure">
+                  <img src="img/dslr.png">
+            </div>
+            <p>[그림 1]은 DSLR 카메라에서 셔터를 누르기 전의 상태를 보여주는데 렌즈를 통해 들어오는 빛은 카메라 내부에서 다음과 같은 과정을 거치게 됩니다.</p>
+
+		<ul>
+			<li>① 빛이 카메라 렌즈를 통과합니다.</li>
+			<li>② 빛이 반사 거울에 반사되어 위쪽으로 향합니다.</li>
+			<li>③ 빛이 펜타프리즘 거울에 반사되어 뷰파인더로 향합니다.</li>
+			<li>④ 들어온 빛에 의해 뷰파인터들 통하여 피사체를 볼 수 있습니다.</li>
+		</ul>
+      </div>
+</section>
+<div class="clear"></div>
+<footer>
+      <div id="footer_logo">
+            <img src="img/footer_logo.png">
+      </div>
+      <div id="address">
+         <ul>
+            <li>서울시 강남구 삼성동 1234 우:123-1234</li>
+             <li>TEL:031-123-1234 Email : email@domain.com</li>
+             <li>COPYRIGHT (C) 루바토 ALL RIGHTS RESERVED</li>
+            </ul>
+      </div>
+</footer>
+</body>
+</html>
